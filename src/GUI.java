@@ -16,9 +16,12 @@ public class GUI extends JPanel implements ActionListener, DocumentListener {
 
     public GUI(int width, int height) {
         System.out.println("SQUENCE: GUI constructor");
-        this.setPreferredSize(new Dimension(width, height));
-        //JFrame mainFrame = new JFrame("Main Frame");
+        mainFrame.setBounds(0, 0, 1000, 700);
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+
+
+
         setLayout(null);
     }
 
@@ -26,6 +29,7 @@ public class GUI extends JPanel implements ActionListener, DocumentListener {
 
         JPanel login = new JPanel();
         login.setBounds(100, 500, 1000, 700);
+        mainFrame.setBounds(0, 0, 1000, 700);
 
         username = new JTextField("enter username");
         username.setBounds(20, 60, 40, 200);
